@@ -37,4 +37,12 @@ A powerful multi-modal Generative AI system that supports text, image, audio, vi
 To run this project, install the required dependencies:
 
 ```bash
-pip install torch wikipedia requests python-pptx Pillow diffusers transformers TTS numpy google-generativeai gTTS gradio
+!pip install numpy --upgrade --force-reinstall
+!pip install torch --upgrade
+!pip install transformers --upgrade
+!pip install diffusers --upgrade
+!pip install wikipedia requests librosa pathlib python-pptx TTS pillow google-generativeai gTTS
+
+import os
+os.kill(os.getpid(), 9)
+pip install torch wikipedia requests python-pptx Pillow diffusers transformers TTS numpy google-generativeai gTTS gradio 
